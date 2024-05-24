@@ -3,7 +3,12 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
+.maxWidthWrapper header {
+  width: 65%;
+}
+
+.maxWidthWrapper .controlColumn {
+  width: 50%;
 }
 
 .header {
@@ -24,7 +29,16 @@
 }
 
 .characterWrapper {
-}
-
-.controlColumn {
+  min-height: 500px;
+  top: 5%;
+  left: 60%;
+  position: fixed;
+  /* Give a bottom value, in order for the character to have implicitly correctly
+   calculated height. Browser is able to calculate height from top and bottom.
+    We need specific height, in order to not make the SVG disappear.
+    CharacterWrapper and Character look at each other and say: "I need your height!"
+    Character's height: 100% won't have an effect in this situation - "the endless
+    loop is terminated"
+  */
+  bottom: 5%;
 }
