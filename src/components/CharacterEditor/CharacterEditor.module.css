@@ -42,3 +42,11 @@
   */
   bottom: 5%;
 }
+
+.perspectiveBar {
+  position: fixed;
+  width: 100dvw;
+  height: 40dvh;
+  bottom: 0;
+  background-color: hsl(195deg, 20%, 86%);
+}
